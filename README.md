@@ -9,7 +9,7 @@ Implementación de un modelo transaccional (OLTP) y un modelo analítico (Data W
 ## Dominio del negocio
 
 **Ventas y Distribución** — Sistema que gestiona el ciclo completo de ventas de una empresa distribuidora: clientes, empleados, productos, pedidos y envíos.
-
+Enfocándonos en el ciclo comercial de una empresa distribuidora esto incluye la gestión de clientes el control de inventario con la tabla de productos el procesamiento de pedidos y la logística de envios
 ---
 
 ## Estructura del repositorio
@@ -71,6 +71,8 @@ Modelo dimensional **estrella** con esquema `dw`, orientado a análisis de venta
 | `Flete` | Costo de envío del pedido |
 
 ### Dimensiones
+
+
 
 | Dimensión | Atributos clave |
 |---|---|
