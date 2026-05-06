@@ -88,9 +88,9 @@ El modelo dimensional se complementa con las siguientes dimensiones clave produc
 
 ### Requisitos
 
-- SQL Server 2017 o superior
-- SQL Server Management Studio (SSMS)
-- Visual Studio con SSDT (para el proyecto DACPAC)
+- SQL Server 2017 o superior																					 (Para la base de datos)
+- SQL Server Management Studio (SSMS)															(Para ejecutar los scripts de creación de tablas y administrar la base de datos)                                 
+- Visual Studio con SSDT (para el proyecto DACPAC)     (Para crear el proyecto de base de datos y generar el archivo DACPAC)
 
 ### Pasos
 
