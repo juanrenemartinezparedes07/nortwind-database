@@ -72,7 +72,7 @@ Modelo dimensional **estrella** con esquema `dw`, orientado a análisis de venta
 
 ### Dimensiones
 
-
+El modelo dimensional se complementa con las siguientes dimensiones clave producto que permite analizar las ventas por articulo,tiempo que agrupa los pedidos por fecha, cliente para segmentar la información por comprador y empleado.
 
 | Dimensión | Atributos clave |
 |---|---|
