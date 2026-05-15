@@ -1,0 +1,72 @@
+-- ==========================================================
+-- Prueba incremental del ETL con DimShipper
+-- Proyecto: NorthWind BI / ETL
+-- Origen: NorthWindOLTP
+-- Destino: NorthWindDW
+-- ==========================================================
+
+-- 1. Ver estado actual del Data Warehouse
+SELECT TOP (1000)
+    ShipperSK,
+    ShipperID,
+    CompanyName,
+    Phone
+FROM NorthWindDW.dbo.DimShipper
+ORDER BY ShipperID;
+GO
+
+
+-- 2. Insertar nuevo dato en la base OLTP
+USE NorthWindOLTP;
+GO
+
+INSERT INTO dbo.Shippers
+(
+    CompanyName,
+    Phone
+)
+VALUES
+(
+    'DHL Express Demo GitHub',
+    '(212) 555-7777'
+);
+GO
+
+
+-- 3. Verificar que el dato existe en OLTP
+SELECT TOP (1000)
+    ShipperID,
+    CompanyName,
+    Phone,
+    [rowversion]
+FROM NorthWindOLTP.dbo.Shippers
+WHERE CompanyName = 'DHL Express Demo GitHub';
+GO
+
+
+-- 4. Ejecutar el Job NorthWind desde SQL Server Agent
+--    También se puede esperar 1 minuto si la programación automática está habilitada.
+--
+--    Ruta:
+--    Agente SQL Server -> Trabajos -> NorthWind -> Iniciar trabajo en el paso...
+
+
+-- 5. Verificar que el dato llegó al Data Warehouse
+SELECT TOP (1000)
+    ShipperSK,
+    ShipperID,
+    CompanyName,
+    Phone
+FROM NorthWindDW.dbo.DimShipper
+WHERE CompanyName = 'DHL Express Demo GitHub';
+GO
+
+
+-- 6. Revisar control incremental por rowversion
+SELECT
+    PackageName,
+    LastRowVersion,
+    LastLoadDate
+FROM NorthWindDW.dbo.PackageConfig
+WHERE PackageName = 'DimShipper';
+GO
