@@ -1,0 +1,90 @@
+5/15/2026 05:29:11 PM	Este registro contiene información acerca de la operación de importación de esquema en el proyecto 'NorthWindOLTP_DatabaseProject' del equipo 'LAPTOP-E5F3V7JO' por el usuario 'HP-victus'.
+5/15/2026 05:29:12 PM	Se inició la importación del esquema de la base de datos.
+5/15/2026 05:29:43 PM	Recopilando credenciales de la base de datos
+5/15/2026 05:29:43 PM	Recopilando opciones de base de datos
+5/15/2026 05:29:44 PM	Recopilando la opción de configuración de ámbito de la base de datos genérica
+5/15/2026 05:29:44 PM	Recopilando usuarios
+5/15/2026 05:29:44 PM	Recopilando roles
+5/15/2026 05:29:44 PM	Recopilando roles de aplicación
+5/15/2026 05:29:44 PM	Recopilando pertenencias a roles
+5/15/2026 05:29:44 PM	Recopilando grupos de archivos
+5/15/2026 05:29:44 PM	Recopilando catálogos de texto completo
+5/15/2026 05:29:44 PM	Recopilando ensamblados
+5/15/2026 05:29:44 PM	Recopilando certificados
+5/15/2026 05:29:44 PM	Recopilando claves asimétricas
+5/15/2026 05:29:44 PM	Recopilando claves simétricas
+5/15/2026 05:29:44 PM	Recopilando claves simétricas cifradas
+5/15/2026 05:29:44 PM	Recopilando esquemas
+5/15/2026 05:29:44 PM	Recopilando colecciones de esquemas XML
+5/15/2026 05:29:44 PM	Recopilando tipos de datos definidos por el usuario
+5/15/2026 05:29:44 PM	Recopilando tipos definidos por el usuario
+5/15/2026 05:29:44 PM	Recopilando tipos de tabla
+5/15/2026 05:29:44 PM	Recopilando claves únicas para tipos de tabla
+5/15/2026 05:29:44 PM	Recopilando claves principales para tipos de tabla
+5/15/2026 05:29:44 PM	Recopilando índices para tipos de tablas
+5/15/2026 05:29:44 PM	Recopilando restricciones CHECK para tipos de tabla
+5/15/2026 05:29:44 PM	Recopilando restricciones DEFAULT para tipos de tabla
+5/15/2026 05:29:44 PM	Recopilando funciones de partición
+5/15/2026 05:29:44 PM	Recopilando esquemas de partición
+5/15/2026 05:29:44 PM	Recopilando funciones
+5/15/2026 05:29:44 PM	Recopilando funciones cifradas
+5/15/2026 05:29:44 PM	Recopilando agregados
+5/15/2026 05:29:44 PM	Recopilando procedimientos
+5/15/2026 05:29:45 PM	Recopilando procedimientos cifrados
+5/15/2026 05:29:45 PM	Recopilando tablas
+5/15/2026 05:29:45 PM	Recopilando claves principales
+5/15/2026 05:29:45 PM	Recopilando restricciones UNIQUE
+5/15/2026 05:29:45 PM	Recopilando claves externas
+5/15/2026 05:29:45 PM	Recopilando restricciones DEFAULT
+5/15/2026 05:29:45 PM	Recopilando restricciones CHECK
+5/15/2026 05:29:45 PM	Recopilando vistas
+5/15/2026 05:29:45 PM	Recopilando vistas cifradas
+5/15/2026 05:29:45 PM	Recopilando índices
+5/15/2026 05:29:45 PM	Recopilando estadísticas
+5/15/2026 05:29:45 PM	Recopilando listas de palabras irrelevantes de índices de texto completo
+5/15/2026 05:29:45 PM	Recopilando listas de propiedades de búsqueda
+5/15/2026 05:29:45 PM	Recopilando propiedades de búsqueda
+5/15/2026 05:29:45 PM	Recopilando índices de texto completo
+5/15/2026 05:29:45 PM	Recopilando índices de almacenamiento de columnas
+5/15/2026 05:29:45 PM	Recopilando índices espaciales
+5/15/2026 05:29:45 PM	Recopilando índices XML
+5/15/2026 05:29:45 PM	Recolección de índices JSON
+5/15/2026 05:29:45 PM	Recopilando índices XML selectivos
+5/15/2026 05:29:45 PM	Recopilando desencadenadores cifrados
+5/15/2026 05:29:45 PM	Recopilando desencadenadores
+5/15/2026 05:29:45 PM	Recopilando DDL triggers cifrados y de CLR
+5/15/2026 05:29:45 PM	Recopilando DDL triggers
+5/15/2026 05:29:45 PM	Creación de la restricción perimetral en curso
+5/15/2026 05:29:45 PM	Recopilando sinónimos
+5/15/2026 05:29:45 PM	Recopilando valores predeterminados
+5/15/2026 05:29:45 PM	Recopilando enlaces UDDT de restricción de datos
+5/15/2026 05:29:45 PM	Recopilando reglas
+5/15/2026 05:29:45 PM	Recopilando enlaces UDDT de restricción de datos
+5/15/2026 05:29:45 PM	Recopilando tipos de mensaje
+5/15/2026 05:29:45 PM	Recopilando colas
+5/15/2026 05:29:45 PM	Recopilando contratos
+5/15/2026 05:29:45 PM	Recopilando servicios
+5/15/2026 05:29:45 PM	Recopilando notificaciones de eventos
+5/15/2026 05:29:45 PM	Recopilando enlaces de servicio remoto
+5/15/2026 05:29:45 PM	Recopilando prioridades de Broker
+5/15/2026 05:29:45 PM	Recopilando firmas
+5/15/2026 05:29:45 PM	Recopilando opciones de compresión
+5/15/2026 05:29:45 PM	Recopilando tipos de secuencia
+5/15/2026 05:29:45 PM	Recopilando directivas de seguridad
+5/15/2026 05:29:45 PM	Recopilar claves de cifrado de columna
+5/15/2026 05:29:45 PM	Recopilando claves maestras de columna
+5/15/2026 05:29:45 PM	Recopilando orígenes de datos externos
+5/15/2026 05:29:45 PM	Recopilando formatos de archivo externos
+5/15/2026 05:29:45 PM	Recopilando modelos externos
+5/15/2026 05:29:45 PM	Recopilando tablas externas
+5/15/2026 05:29:45 PM	Recopilando opciones de compresión de índice XML
+5/15/2026 05:29:45 PM	Recopilando propiedades extendidas
+5/15/2026 05:29:45 PM	Recopilando ensamblados
+5/15/2026 05:29:46 PM	Recopilando credenciales
+5/15/2026 05:29:46 PM	Recopilando inicios de sesión
+5/15/2026 05:29:46 PM	Recopilando auditorías de servidor
+5/15/2026 05:29:46 PM	Buscando elementos duplicados en el proyecto
+5/15/2026 05:29:46 PM	Ha finalizado el procesamiento de los elementos duplicados
+5/15/2026 05:29:48 PM	Finalizó la importación de la base de datos.
+5/15/2026 05:29:48 PM	Se guardó un resumen de la importación en la siguiente ubicación: C:\BI_Northwind\VisualStudio\DACPAC\Database1\Registros de importación de esquemas\NorthWindOLTP_Databa_20260515092911.log
+5/15/2026 05:29:48 PM	Haga clic en Finalizar para continuar...

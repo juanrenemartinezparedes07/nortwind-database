@@ -1,0 +1,108 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003" ToolsVersion="4.0">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <Name>NorthWindDW_DatabaseProject</Name>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectVersion>4.1</ProjectVersion>
+    <ProjectGuid>{28707d60-124c-4996-9f48-59bc25df99c1}</ProjectGuid>
+    <DSP>Microsoft.Data.Tools.Schema.Sql.Sql170DatabaseSchemaProvider</DSP>
+    <OutputType>Database</OutputType>
+    <RootPath>
+    </RootPath>
+    <RootNamespace>NorthWindDW_DatabaseProject</RootNamespace>
+    <AssemblyName>NorthWindDW_DatabaseProject</AssemblyName>
+    <ModelCollation>1033,CI</ModelCollation>
+    <DefaultFileStructure>BySchemaAndSchemaType</DefaultFileStructure>
+    <DeployToDatabase>True</DeployToDatabase>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <TargetLanguage>CS</TargetLanguage>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <SqlServerVerification>False</SqlServerVerification>
+    <IncludeCompositeObjects>True</IncludeCompositeObjects>
+    <TargetDatabaseSet>True</TargetDatabaseSet>
+    <DefaultCollation>Latin1_General_CI_AI</DefaultCollation>
+    <DefaultFilegroup>PRIMARY</DefaultFilegroup>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <OutputPath>bin\Release\</OutputPath>
+    <BuildScriptName>$(MSBuildProjectName).sql</BuildScriptName>
+    <TreatWarningsAsErrors>False</TreatWarningsAsErrors>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <DefineDebug>false</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <OutputPath>bin\Debug\</OutputPath>
+    <BuildScriptName>$(MSBuildProjectName).sql</BuildScriptName>
+    <TreatWarningsAsErrors>false</TreatWarningsAsErrors>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <DefineDebug>true</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup>
+    <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">11.0</VisualStudioVersion>
+    <!-- Default to the v11.0 targets path if the targets file for the current VS version is not found -->
+    <SSDTExists Condition="Exists('$(MSBuildExtensionsPath)\Microsoft\VisualStudio\v$(VisualStudioVersion)\SSDT\Microsoft.Data.Tools.Schema.SqlTasks.targets')">True</SSDTExists>
+    <VisualStudioVersion Condition="'$(SSDTExists)' == ''">11.0</VisualStudioVersion>
+  </PropertyGroup>
+  <Import Condition="'$(SQLDBExtensionsRefPath)' != ''" Project="$(SQLDBExtensionsRefPath)\Microsoft.Data.Tools.Schema.SqlTasks.targets" />
+  <Import Condition="'$(SQLDBExtensionsRefPath)' == ''" Project="$(MSBuildExtensionsPath)\Microsoft\VisualStudio\v$(VisualStudioVersion)\SSDT\Microsoft.Data.Tools.Schema.SqlTasks.targets" />
+  <ItemGroup>
+    <Folder Include="Properties" />
+    <Folder Include="staging\" />
+    <Folder Include="staging\Tables\" />
+    <Folder Include="dbo\" />
+    <Folder Include="dbo\Tables\" />
+    <Folder Include="dbo\Stored Procedures\" />
+    <Folder Include="Security\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Build Include="staging\Tables\Customer.sql" />
+    <Build Include="staging\Tables\Employee.sql" />
+    <Build Include="staging\Tables\Product.sql" />
+    <Build Include="staging\Tables\Shipper.sql" />
+    <Build Include="staging\Tables\ShipLocation.sql" />
+    <Build Include="staging\Tables\Sales.sql" />
+    <Build Include="dbo\Tables\PackageConfig.sql" />
+    <Build Include="dbo\Tables\DimDate.sql" />
+    <Build Include="dbo\Tables\DimCustomer.sql" />
+    <Build Include="dbo\Tables\DimEmployee.sql" />
+    <Build Include="dbo\Tables\DimShipper.sql" />
+    <Build Include="dbo\Tables\DimShipLocation.sql" />
+    <Build Include="dbo\Tables\DimProduct.sql" />
+    <Build Include="dbo\Tables\FactSales.sql" />
+    <Build Include="dbo\Stored Procedures\DW_SyncDimCustomerFromStaging.sql" />
+    <Build Include="dbo\Stored Procedures\DW_SyncDimShipperFromStaging.sql" />
+    <Build Include="dbo\Stored Procedures\DW_SyncDimProductFromStaging.sql" />
+    <Build Include="dbo\Stored Procedures\DW_SyncDimEmployeeFromStaging.sql" />
+    <Build Include="dbo\Stored Procedures\DW_SyncDimShipLocationFromStaging.sql" />
+    <Build Include="dbo\Stored Procedures\DW_SyncFactSalesFromStaging.sql" />
+    <Build Include="dbo\Stored Procedures\DW_ClearFactSales.sql" />
+    <Build Include="dbo\Stored Procedures\DW_LoadDimCustomer.sql" />
+    <Build Include="dbo\Stored Procedures\DW_LoadDimEmployee.sql" />
+    <Build Include="dbo\Stored Procedures\DW_LoadDimShipper.sql" />
+    <Build Include="dbo\Stored Procedures\DW_LoadDimProduct.sql" />
+    <Build Include="dbo\Stored Procedures\DW_LoadDimShipLocation.sql" />
+    <Build Include="dbo\Stored Procedures\DW_LoadFactSales.sql" />
+    <Build Include="dbo\Stored Procedures\DW_LoadFullWarehouse.sql" />
+    <Build Include="dbo\Stored Procedures\DW_GetLastPackageRowVersion.sql" />
+    <Build Include="dbo\Stored Procedures\DW_UpdateLastPackageRowVersion.sql" />
+    <Build Include="dbo\Stored Procedures\DW_MergeDimShipperByRowVersion.sql" />
+    <Build Include="dbo\Stored Procedures\DW_MergeDimCustomerByRowVersion.sql" />
+    <Build Include="dbo\Stored Procedures\DW_MergeDimProductByRowVersion.sql" />
+    <Build Include="dbo\Stored Procedures\DW_MergeDimEmployeeByRowVersion.sql" />
+    <Build Include="dbo\Stored Procedures\DW_MergeFactSalesByRowVersion.sql" />
+    <Build Include="dbo\Stored Procedures\DW_MergeDimShipLocationByRowVersion.sql" />
+    <Build Include="dbo\Stored Procedures\DW_MergeIncrementalWarehouse.sql" />
+    <Build Include="Security\staging.sql" />
+  </ItemGroup>
+</Project>

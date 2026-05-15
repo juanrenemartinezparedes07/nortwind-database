@@ -1,0 +1,25 @@
+﻿CREATE TABLE [staging].[Sales] (
+    [OrderID]         INT           NULL,
+    [ProductID]       INT           NULL,
+    [OrderDateKey]    INT           NULL,
+    [RequiredDateKey] INT           NULL,
+    [ShippedDateKey]  INT           NULL,
+    [CustomerID]      NCHAR (5)     NULL,
+    [EmployeeID]      INT           NULL,
+    [ShipperID]       INT           NULL,
+    [ShipName]        NVARCHAR (40) NULL,
+    [ShipAddress]     NVARCHAR (60) NULL,
+    [ShipCity]        NVARCHAR (15) NULL,
+    [ShipRegion]      NVARCHAR (15) NULL,
+    [ShipPostalCode]  NVARCHAR (10) NULL,
+    [ShipCountry]     NVARCHAR (15) NULL,
+    [Quantity]        SMALLINT      NULL,
+    [UnitPrice]       MONEY         NULL,
+    [Discount]        REAL          NULL,
+    [GrossAmount]     MONEY         NULL,
+    [DiscountAmount]  MONEY         NULL,
+    [NetAmount]       MONEY         NULL,
+    [FreightAmount]   MONEY         NULL,
+    [RowVersionValue] VARBINARY (8) NULL
+);
+
